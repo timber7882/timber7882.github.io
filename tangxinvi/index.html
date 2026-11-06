@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>糖心vigo-糖心vigo官网入口_糖心vigo最新版本下载</title>
+<meta name="description" content="糖心vigo主题首页，提供糖心vigo最新版本下载入口、官网地址说明与版本更新要点，帮助访问者快速了解糖心vigo的功能范围与使用路径。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23e8467c'/%3E%3Cpath d='M32 14c6 8 14 12 14 22a14 14 0 0 1-28 0c0-10 8-14 14-22z' fill='%23fff' opacity='.92'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --pink:#e8467c;
+    --pink-deep:#c22b5e;
+    --ink:#231a20;
+    --ink-soft:#5c4d55;
+    --line:#f0dfe6;
+    --bg:#fffafc;
+    --card:#ffffff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  img,svg{display:block;max-width:100%;}
+  .wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 22px;}
+
+  /* Header */
+  header.site{
+    position:sticky;top:0;z-index:50;
+    background:rgba(255,250,252,.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    display:flex;align-items:center;justify-content:space-between;
+    gap:18px;min-height:68px;
+  }
+  .brand{display:flex;align-items:center;gap:10px;flex-shrink:0;}
+  .brand .mark{
+    width:38px;height:38px;border-radius:12px;
+    background:linear-gradient(140deg,#ff7ba7,#e8467c 60%,#c22b5e);
+    display:grid;place-items:center;
+    box-shadow:0 6px 16px rgba(232,70,124,.28);
+  }
+  .brand .mark svg{width:20px;height:20px;}
+  .brand .name{
+    font-size:19px;font-weight:800;letter-spacing:.5px;
+    color:var(--ink);
+  }
+  .brand .name em{font-style:normal;color:var(--pink);}
+  nav.links{display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
+  nav.links a{
+    font-size:14.5px;color:var(--ink-soft);font-weight:500;
+    padding:8px 12px;border-radius:9px;transition:.18s;
+  }
+  nav.links a:hover{color:var(--pink-deep);background:#fdeaf1;}
+  .nav-cta{
+    font-size:14px;font-weight:700;color:#fff;
+    background:linear-gradient(135deg,#f2618f,#d5336a);
+    padding:10px 18px;border-radius:11px;white-space:nowrap;
+    box-shadow:0 8px 18px rgba(213,51,106,.24);
+    transition:.18s;
+  }
+  .nav-cta:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(213,51,106,.32);}
+
+  /* Hero */
+  .hero{
+    position:relative;overflow:hidden;
+    background:
+      radial-gradient(680px 320px at 82% -10%,#ffe1ec 0%,rgba(255,225,236,0) 70%),
+      radial-gradient(520px 280px at 5% 110%,#ffeef4 0%,rgba(255,238,244,0) 70%);
+    padding:56px 0 48px;
+  }
+  .hero-grid{
+    display:grid;grid-template-columns:1.15fr .85fr;
+    gap:44px;align-items:center;
+  }
+  .tagline{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:13px;font-weight:600;color:var(--pink-deep);
+    background:#fdeaf1;border:1px solid #f8d3e0;
+    padding:6px 13px;border-radius:999px;margin-bottom:18px;
+  }
+  .tagline .dot{width:6px;height:6px;border-radius:50%;background:var(--pink);}
+  h1{
+    font-size:clamp(30px,4.4vw,46px);
+    line-height:1.22;letter-spacing:-.5px;font-weight:800;
+    margin-bottom:16px;
+  }
+  h1 .hl{
+    background:linear-gradient(180deg,transparent 62%,#ffd6e4 62%);
+    padding:0 2px;
+  }
+  .hero p.lead{
+    font-size:16px;color:var(--ink-soft);max-width:34em;
+    margin-bottom:26px;
+  }
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+  .btn-primary{
+    display:inline-flex;align-items:center;gap:9px;
+    background:linear-gradient(135deg,#f2618f,#d5336a);
+    color:#fff;font-weight:700;font-size:15.5px;
+    padding:14px 26px;border-radius:13px;
+    box-shadow:0 10px 24px rgba(213,51,106,.28);
+    transition:.18s;
+  }
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 28px rgba(213,51,106,.34);}
+  .btn-ghost{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:15px;font-weight:600;color:var(--ink);
+    padding:13px 22px;border-radius:13px;
+    border:1.5px solid var(--line);background:#fff;
+    transition:.18s;
+  }
+  .btn-ghost:hover{border-color:#f5c2d4;color:var(--pink-deep);}
+  .hero-stats{
+    display:flex;gap:28px;margin-top:32px;flex-wrap:wrap;
+  }
+  .hero-stats div{min-width:82px;}
+  .hero-stats b{display:block;font-size:22px;color:var(--pink-deep);font-weight:800;line-height:1.3;}
+  .hero-stats span{font-size:13px;color:var(--ink-soft);}
+
+  .hero-art{
+    position:relative;border-radius:24px;
+    background:linear-gradient(160deg,#fff,#fff2f7);
+    border:1px solid #f7dbe6;
+    padding:22px;box-shadow:0 24px 50px -22px rgba(194,43,94,.28);
+  }
+  .hero-art svg{width:100%;height:auto;}
+  .art-note{
+    display:flex;align-items:center;gap:8px;
+    margin-top:14px;font-size:12.5px;color:var(--ink-soft);
+    border-top:1px dashed #f4cfdd;padding-top:12px;
+  }
+  .art-note .pulse{
+    width:8px;height:8px;border-radius:50%;background:#3fbf8f;
+    box-shadow:0 0 0 3px rgba(63,191,143,.18);
+  }
+
+  /* Section base */
+  section{padding:64px 0;}
+  section.alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .sec-head{margin-bottom:34px;max-width:42em;}
+  .kicker{
+    font-size:12.5px;font-weight:700;letter-spacing:1.5px;
+    color:var(--pink);text-transform:uppercase;margin-bottom:10px;
+  }
+  h2{font-size:clamp(22px,3vw,30px);line-height:1.35;font-weight:800;letter-spacing:-.3px;}
+  .sec-head p{margin-top:12px;color:var(--ink-soft);font-size:15px;}
+
+  /* Features */
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .card{
+    background:var(--card);border:1px solid var(--line);
+    border-radius:18px;padding:26px 24px;
+    transition:.2s;
+  }
+  .card:hover{transform:translateY(-3px);box-shadow:0 18px 34px -20px rgba(194,43,94,.3);border-color:#f6cddd;}
+  .card .ico{
+    width:44px;height:44px;border-radius:13px;
+    display:grid;place-items:center;margin-bottom:16px;
+    background:#fdeaf1;color:var(--pink-deep);
+  }
+  .card .ico svg{width:22px;height:22px;}
+  .card h3{font-size:17px;font-weight:700;margin-bottom:9px;}
+  .card p{font-size:14.5px;color:var(--ink-soft);}
+
+  /* Steps */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:s;}
+  .step{
+    position:relative;background:#fff;border:1px solid var(--line);
+    border-radius:18px;padding:26px 24px 24px;
+  }
+  .step .num{
+    font-size:13px;font-weight:800;color:#fff;background:var(--pink);
+    width:28px;height:28px;border-radius:9px;display:grid;place-items:center;
+    margin-bottom:14px;
+  }
+  .step h3{font-size:16.5px;font-weight:700;margin-bottom:8px;}
+  .step p{font-size:14.5px;color:var(--ink-soft);}
+
+  /* Download band */
+  .dl-band{
+    background:linear-gradient(135deg,#2a1a22,#43202f 55%,#5c2438);
+    border-radius:26px;padding:42px 40px;color:#fff;
+    display:flex;align-items:center;justify-content:space-between;
+    gap:32px;flex-wrap:wrap;position:relative;overflow:hidden;
+  }
+  .dl-band::after{
+    content:"";position:absolute;right:-60px;top:-60px;
+    width:240px;height:240px;border-radius:50%;
+    background:radial-gradient(circle,rgba(232,70,124,.55),transparent 68%);
+  }
+  .dl-band h2{color:#fff;font-size:clamp(21px,2.6vw,27px);}
+  .dl-band p{color:#e6cdd8;font-size:14.5px;margin-top:10px;max-width:34em;}
+  .dl-actions{display:flex;gap:12px;flex-wrap:wrap;position:relative;z-index:1;}
+  .btn-dl{
+    display:inline-flex;align-items:center;gap:9px;
+    background:#fff;color:#a1214c;font-weight:800;font-size:15px;
+    padding:14px 26px;border-radius:13px;
+    cursor:pointer;pointer-events:none;
+    opacity:.96;
+  }
+  .btn-sub{
+    display:inline-flex;align-items:center;gap:8px;
+    border:1.5px solid rgba(255,255,255,.35);color:#fff;
+    font-size:14.5px;font-weight:600;padding:13px 22px;border-radius:13px;
+    transition:.18s;
+  }
+  .btn-sub:hover{background:rgba(255,255,255,.1);}
+
+  /* FAQ */
+  .faq{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  .qa{
+    background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 24px;
+  }
+  .qa h3{font-size:15.5px;font-weight:700;margin-bottom:8px;color:var(--ink);}
+  .qa p{font-size:14.5px;color:var(--ink-soft);}
+
+  /* Footer */
+  footer.site{
+    background:#241820;color:#c9b6bf;padding:46px 0 30px;margin-top:0;
+  }
+  .foot-top{
+    display:flex;justify-content:space-between;gap:36px;flex-wrap:wrap;
+    padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,.1);
+  }
+  .foot-brand{max-width:30em;}
+  .foot-brand .brand .name{color:#fff;}
+  .foot-brand p{font-size:13.5px;color:#a8939d;margin-top:12px;line-height:1.8;}
+  .foot-links{display:flex;gap:52px;flex-wrap:wrap;}
+  .foot-col h4{font-size:13px;color:#fff;font-weight:700;margin-bottom:12px;letter-spacing:.5px;}
+  .foot-col a{display:block;font-size:13.5px;color:#b9a4ae;margin-bottom:8px;transition:.15s;}
+  .foot-col a:hover{color:#ff9dbd;}
+  .foot-bottom{
+    display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+    font-size:12.5px;color:#8f7c86;padding-top:22px;
+  }
+
+  /* Responsive */
+  @media(max-width:900px){
+    .hero-grid{grid-template-columns:1fr;gap:34px;}
+    .hero-art{order:-1;max-width:460px;}
+    .grid-3,.steps{grid-template-columns:1fr 1fr;}
+    .faq{grid-template-columns:1fr;}
+    .dl-band{padding:34px 26px;}
+  }
+  @media(max-width:680px){
+    nav.links{display:none;}
+    .nav{min-height:60px;}
+    .hero{padding:34px 0 38px;}
+    section{padding:46px 0;}
+    .grid-3,.steps{grid-template-columns:1fr;}
+    .hero-stats{gap:18px;}
+    .hero-actions .btn-primary,.hero-actions .btn-ghost{width:100%;justify-content:center;}
+    .foot-links{gap:34px;}
+    h1{letter-spacing:-.3px;}
+  }
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="糖心vigo 首页">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3c2.4 3.2 5.6 4.9 5.6 9a5.6 5.6 0 1 1-11.2 0C6.4 7.9 9.6 6.2 12 3z" fill="#fff" opacity=".95"/><circle cx="12" cy="13.4" r="1.9" fill="#e8467c"/></svg>
+      </span>
+      <span class="name"><em>糖心</em>vigo</span>
+    </a>
+    <nav class="links" aria-label="主导航">
+      <a href="#features">功能概览</a>
+      <a href="#start">上手路径</a>
+      <a href="#download">版本下载</a>
+      <a href="#faq">常见问答</a>
+    </nav>
+    <a class="nav-cta" href="#download">获取糖心vigo</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="tagline"><span class="dot"></span>主题首页 · 版本与入口</span>
+        <h1>糖心vigo</h1>
+        <p class="lead">糖心vigo 是一个以内容浏览与兴趣发现为核心的主题站点。本页集中呈现它的功能范围、上手路径与<strong>版本下载入口</strong>，让第一次到访的读者在一屏之内看懂它做什么、怎么用、从哪里开始。</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="#download">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M5 21h14"/></svg>
+            下载糖心vigo
+          </a>
+          <a class="btn-ghost" href="#features">先了解功能</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>4类</b><span>核心功能分区</span></div>
+          <div><b>3步</b><span>完成初次上手</span></div>
+          <div><b>持续</b><span>版本维护节奏</span></div>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 420 300" role="presentation">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ffd3e2"/><stop offset="1" stop-color="#ff9dc0"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#e8467c"/><stop offset="1" stop-color="#a3214b"/>
+            </linearGradient>
+          </defs>
+          <rect x="14" y="26" width="392" height="248" rx="20" fill="#fff" stroke="#f7d9e5"/>
+          <rect x="14" y="26" width="392" height="46" rx="20" fill="#fff0f6"/>
+          <rect x="14" y="60" width="392" height="12" fill="#fff0f6"/>
+          <circle cx="42" cy="49" r="5" fill="#ff9dc0"/>
+          <circle cx="60" cy="49" r="5" fill="#ffc7d9"/>
+          <circle cx="78" cy="49" r="5" fill="#f7dbe6"/>
+          <rect x="34" y="92" width="150" height="14" rx="7" fill="url(#g2)"/>
+          <rect x="34" y="116" width="230" height="9" rx="4.5" fill="#f6d7e3"/>
+          <rect x="34" y="132" width="186" height="9" rx="4.5" fill="#f8e2ea"/>
+          <rect x="34" y="160" width="112" height="86" rx="12" fill="url(#g1)"/>
+          <rect x="158" y="160" width="112" height="86" rx="12" fill="#fff2f7" stroke="#f8d9e5"/>
+          <rect x="282" y="160" width="104" height="86" rx="12" fill="#fff2f7" stroke="#f8d9e5"/>
+          <circle cx="90" cy="196" r="16" fill="#fff" opacity=".78"/>
+          <path d="M90 186c3.6 4.8 8.4 7.3 8.4 13.5a8.4 8.4 0 1 1-16.8 0C81.6 193.3 86.4 190.8 90 186z" fill="#e8467c"/>
+          <rect x="176" y="180" width="76" height="8" rx="4" fill="#ffc3d7"/>
+          <rect x="176" y="196" width="58" height="8" rx="4" fill="#f9dde7"/>
+          <rect x="176" y="212" width="68" height="8" rx="4" fill="#f9dde7"/>
+          <rect x="298" y="180" width="72" height="8" rx="4" fill="#ffc3d7"/>
+          <rect x="298" y="196" width="50" height="8" rx="4" fill="#f9dde7"/>
+          <rect x="298" y="212" width="62" height="8" rx="4" fill="#f9dde7"/>
+          <rect x="330" y="92" width="58" height="26" rx="13" fill="#fdeaf1"/>
+          <text x="359" y="110" font-size="12" font-weight="700" fill="#c22b5e" text-anchor="middle" font-family="sans-serif">vigo</text>
+        </svg>
+        <div class="art-note"><span class="pulse"></span>页面展示为功能结构示意，不代表具体版本界面</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Features -->
+  <section id="features" class="alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">功能概览</div>
+        <h2>糖心vigo 把内容、发现与个人偏好放在同一条路径上</h2>
+        <p>糖心vigo 的设计思路是减少无关操作，让浏览本身成为主线。下面四个分区对应访问者最常接触的部分，彼此独立又互相衔接。</p>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18"/><path d="M8 14h8"/></svg></div>
+          <h3>内容浏览</h3>
+          <p>以列表与卡片两种视图展示内容，标题、分类与更新时间清晰可见，方便按兴趣快速扫读。</p>
+        </article>
+        <article class="card">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></div>
+          <h3>分类检索</h3>
+          <p>按主题标签与关键词组合筛选，缩小范围后再进入详情，避免在大量条目中反复翻找。</p>
+        </article>
+        <article class="card">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.6-7 9-7 9z"/></svg></div>
+          <h3>偏好记录</h3>
+          <p>浏览过程中留下的收藏与历史会保留在本地，下次进入时可直接从上次的位置继续。</p>
+        </article>
+        <article class="card">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17V9"/><path d="M10 17V5"/><path d="M16 17v-6"/><path d="M22 17V7"/></svg></div>
+          <h3>更新提示</h3>
+          <p>版本迭代时给出简要说明，列出本次调整的功能点，让用户判断是否需要更新到新版本。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Start -->
+  <section id="start">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">上手路径</div>
+        <h2>第一次使用糖心vigo，按这三步走即可</h2>
+        <p>不需要额外配置，也不需要注册复杂信息。糖心vigo 的初次使用流程被压缩到三个动作，目的是让读者尽快进入内容本身。</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="num">1</div>
+          <h3>选择对应版本</h3>
+          <p>根据设备类型选择匹配的安装包，页面会说明每个版本适用的系统范围，避免装错。</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <h3>完成安装</h3>
+          <p>按系统提示允许必要的运行权限，安装完成后首次启动会加载基础内容列表。</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <h3>设定浏览偏好</h3>
+          <p>在设置里勾选感兴趣的分类，糖心vigo 会据此调整列表排序，减少无关内容干扰。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download -->
+  <section id="download" class="alt">
+    <div class="wrap">
+      <div class="dl-band">
+        <div>
+          <h2>获取糖心vigo 当前版本</h2>
+          <p>下载入口提供与当前发布状态一致的安装包。若页面显示为占位状态，说明该版本仍在准备中，可先通过下方问答了解版本差异。</p>
+        </div>
+        <div class="dl-actions">
+          <a class="btn-dl" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M5 21h14"/></svg>
+            下载
+          </a>
+          <a class="btn-sub" href="#faq">查看版本说明</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">常见问答</div>
+        <h2>关于糖心vigo 的几个实际问题</h2>
+        <p>以下问题来自访问者在了解糖心vigo 时最常提出的疑问，回答只涉及页面能够确认的范围。</p>
+      </div>
+      <div class="faq">
+        <div class="qa">
+          <h3>糖心vigo 主要用来做什么？</h3>
+          <p>它围绕内容浏览与兴趣发现展开，提供列表、检索、收藏与更新提示几项基础能力，适合希望集中查看同类内容的用户。</p>
+        </div>
+        <div class="qa">
+          <h3>下载按钮为什么暂时不可点击？</h3>
+          <p>页面当前使用占位链接，表示安装包地址尚未替换为正式发布地址。按钮保持禁用状态，避免跳转到无效目标。</p>
+        </div>
+        <div class="qa">
+          <h3>新版本会带来哪些变化？</h3>
+          <p>版本说明会列出本次调整的功能点与修复项。糖心vigo 的更新以稳定性和浏览体验为主，不改变既有的操作路径。</p>
+        </div>
+        <div class="qa">
+          <h3>个人偏好数据存在哪里？</h3>
+          <p>收藏与浏览记录保存在本地设备中，不会随页面刷新丢失。更换设备时这些记录不会自动迁移。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing note -->
+  <section>
+    <div class="wrap">
+      <div class="sec-head" style="max-width:52em;">
+        <div class="kicker">写在最后</div>
+        <h2>把糖心vigo 当作一个固定的内容入口</h2>
+        <p>对多数访问者来说，糖心vigo 的价值不在于功能数量，而在于每次打开都能直接进入想看的内容。页面把功能、上手与下载三条线索分开呈现，是为了让不同目的的读者各取所需：想了解的人看功能概览，准备使用的人看上手路径，已有意向的人直接进入下载区。糖心vigo 的版本与入口信息会随发布状态同步调整，建议收藏本页以便后续核对。</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="brand">
+          <span class="mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 3c2.4 3.2 5.6 4.9 5.6 9a5.6 5.6 0 1 1-11.2 0C6.4 7.9 9.6 6.2 12 3z" fill="#fff" opacity=".95"/><circle cx="12" cy="13.4" r="1.9" fill="#e8467c"/></svg>
+          </span>
+          <span class="name">糖心vigo</span>
+        </div>
+        <p>糖心vigo 主题首页，汇总功能概览、上手路径与版本下载入口。页面内容随发布状态调整，具体能力以实际版本为准。</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h4>页面导航</h4>
+          <a href="#features">功能概览</a>
+          <a href="#start">上手路径</a>
+          <a href="#download">版本下载</a>
+          <a href="#faq">常见问答</a>
+        </div>
+        <div class="foot-col">
+          <h4>关于本站</h4>
+          <a href="#top">回到页首</a>
+          <a href="#download">获取糖心vigo</a>
+          <a href="#faq">版本说明</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 糖心vigo 主题首页</span>
+      <span>页面信息以实际发布状态为准</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
